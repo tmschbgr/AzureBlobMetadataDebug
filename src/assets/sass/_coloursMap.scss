@@ -1,0 +1,99 @@
+﻿//Map of colour values / labels available for sections:
+$sectionColours: (
+ orange: #d04a02,
+ red: #e0301e,
+ burgundy: #e0301e,
+ maroon: #e0301e,
+ rose: #d93954
+);
+//Map of colour values / labels available for components:
+$componentColours: (
+ orange: #d04a02,
+ red: #e0301e,
+ burgundy: #e0301e, //alias to red
+ maroon: #e0301e, //alias to red
+ rose: #d93954
+);
+
+$componentStates: (
+ orange: #d04a02,
+ orangeHover: #b13f02,
+ orangeActive: #a63b02,
+ red: #e0301e,
+ redHover: #be291a,
+ redActive: #b32618,
+ burgundy: #e0301e, //alias to red
+ burgundyHover: #be291a, //alias to red
+ burgundyActive:#b32618, //alias to red
+ maroon: #e0301e, //alias to red
+ maroonHover: #be291a, //alias to red
+ maroonActive: #b32618, //alias to red
+ rose: #d93954,
+ roseHover: #b93147,
+ roseActive: #ae2e43,
+ grey: #e0301e, //alias to red
+ greyHover: #be291a, //alias to red
+ greyActive: #b32618 //alias to red
+);
+
+$componentColoursBS: (
+ orange: #d04a02,
+ red: #e0301e,
+ rose: #d93954
+);
+
+$componentStatesBS: (
+ orange: #d04a02,
+ orangeHover: #b13f02,
+ orangeActive: #a63b02,
+ red: #e0301e,
+ redHover: #be291a,
+ redActive: #b32618,
+ rose: #d93954,
+ roseHover: #b93147,
+ roseActive: #ae2e43
+);
+
+
+//Brand colour values
+$orange: #d04a02;
+$red: #e0301e;
+$burgundy: $red; //alias to red
+$maroon: $red; //alias to red
+$rose: #d93954;
+$grey: $red; //alias to red
+$black70: #7d7d7d;
+$yellow: #ffb600;
+
+
+$redShade15: #be291a;
+$redShade20: #b32618;
+
+$orangeShade15: #b13f02;
+$orangeShade20: #a63b02;
+
+$roseShade15: #b93147;
+$roseShade20: #ae2e43;
+
+$burgundyShade15: $redShade15;
+$burgundyShade20: $redShade20;
+
+$maroonShade15: $redShade15;
+$maroonShade20: $redShade20;
+
+$greyShade15: $redShade15;
+$greyShade20: $redShade20;
+
+$pagePrimary: #e0301e;
+$pageSecondary: #e0301e; //todo - retire this variable once BS project is complete
+$pageTertiary: #e0301e; //todo - retire this variable once BS project is complete
+
+//General UI colours
+$white: #ffffff;
+$w: $white;
+$black: #2d2d2d;
+$pureBlack: #000000;
+$lightgrey: #f2f2f2;
+$greyKeyline: #dedede;
+
+$functionalgrey: #464646;

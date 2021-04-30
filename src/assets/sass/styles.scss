@@ -1,0 +1,234 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.v-application {
+    font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+.rose {
+    background-color: $rose !important;
+    border-color: $rose !important;
+}
+
+.flex-0 { flex: 0 !important; }
+.flex-0p5 { flex: 0.5 !important; }
+.flex-1 { flex: 1 !important; }
+.flex-2 { flex: 2 !important; }
+.flex-3 { flex: 3 !important; }
+.flex-4 { flex: 4 !important; }
+.flex-5 { flex: 5 !important; }
+.flex-6 { flex: 6 !important; }
+
+.bold {
+    font-weight: bold;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.text-decoration-none {
+    text-decoration: none !important;
+}
+
+.text-black {
+    color: $black !important;
+}
+
+.text-rose {
+    color: $rose !important;
+}
+
+.shadow {
+    box-shadow: 0px 5px 25px 1px rgba(0, 0, 0, 0.15);
+}
+
+.view-horizontal-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.container.body {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+@media (min-width: 1903px) {
+    .view-horizontal-padding {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    
+    .container.body {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+
+}
+
+@media (max-width: 1263px) {
+
+    .view-horizontal-padding {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .container.body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+.v-card__text {
+    font-size: 1.0em;
+    line-height: 1.7em !important;
+    color: #424242 !important;
+}
+
+// Form component styling
+
+.v-form {  
+    .title {
+        color: $rose;
+        border-top: 2px solid $rose;
+        margin-bottom: 18px;
+    }
+
+    .f-column {
+        @include flex-direction(column);
+        width: 290px;
+    }
+    
+    .f-column.left {
+        margin-right: 121px;
+    }
+}
+
+.v-label {
+    font-weight: bold;
+    color: $black !important;
+    font-size: 14px;
+}
+
+.c-tags-input,
+.c-text-field,
+.c-select,
+.c-toggle {
+    border: 1px solid transparent; // for some reason we need this to force the children to fit inside the div
+
+    .v-input {
+        .v-label {
+            //text-overflow: initial !important;
+            //max-width: 100%;
+            //overflow: visible !important;
+            display: none !important;
+        }
+    }
+    
+    fieldset {
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        // background-color: $white;
+    }
+    
+    legend {
+        display: none;
+    }
+
+    .v-select__selections {
+        padding: 0px !important;
+        min-height: 32px !important;
+    }
+    
+    .v-text-field__slot,
+    .v-select__selections {
+        margin-bottom: 6px;
+    }
+    
+    .v-input__append-inner {
+        margin-top: 4px !important;
+    }
+    
+    input,
+    .v-input {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    
+    .v-input {
+        //padding-bottom: 25px !important;
+    }
+    
+    .v-input__slot {
+        //height: 35px;
+        min-height: 32px !important;
+        margin-bottom: 5px;
+    }
+    
+    .v-text-field {
+        margin-top: 6px !important;
+        /*
+        .v-label {
+            transform: translate(-12px, -50px);
+        }*/
+    }
+
+    .v-text-field__details {
+        padding: 0px !important;
+    }
+    
+    .v-messages.error--text {
+        padding-bottom: 22px !important;
+    }
+}
+
+.c-tags-input.dense,
+.c-text-field.dense,
+.c-select.dense,
+.c-toggle.dense {
+    .v-input__slot {
+        margin-bottom: 0px !important;
+    }
+
+    .v-messages { 
+        display: none;
+    }
+}
+
+.v-input--radio-group__input {
+
+    .v-label {
+        color: $black;
+    }
+
+    > .v-label {
+        font-weight: bold;
+        font-size: 14px;
+    }
+}
+
+.v-radio {
+    .v-label {
+        font-weight: normal;
+    }
+}
+
+.drop-down-menu {
+    .v-list {
+        padding: 0;
+
+        .v-list-item {
+            border-bottom: 1px solid $greyKeyline;
+        }
+    }
+}
+
+.help-question {
+    display: inline-block;
+    margin-left: 4px;
+    position: relative;
+    top: 6px;
+}
